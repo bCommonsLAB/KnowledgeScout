@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Outlet } from 'react-router-dom';
+import React, { useState, useContext } from 'react';
+import { Outlet, useNavigate } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Select, MenuItem, IconButton, Box, Switch } from '@mui/material';
 import { Menu, Settings, AccountCircle, ExitToApp } from '@mui/icons-material';
 import { useSelector, useDispatch } from 'react-redux';
@@ -7,6 +7,7 @@ import { setProfile } from '../redux/profileSlice';
 import { useTheme } from '@mui/material/styles';
 import ConfigurationMain from '../components/Configuration/ConfigurationMain';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
+import { AuthContext } from '../context/AuthContext';
 
 const Footer = () => {
   const theme = useTheme();
@@ -29,9 +30,16 @@ const MainLayout = ({ toggleColorMode }) => {
   const dispatch = useDispatch();
   const [configOpen, setConfigOpen] = useState(false);
   const theme = useTheme();
+  const { logout } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const toggleConfig = () => {
     setConfigOpen(!configOpen);
+  };
+
+  const handleLogout = () => {
+    logout();
+    navigate('/');
   };
 
   return (
@@ -54,9 +62,9 @@ const MainLayout = ({ toggleColorMode }) => {
             <MenuItem value="Research">Research</MenuItem>
           </Select>
           <Switch checked={theme.palette.mode === 'dark'} onChange={toggleColorMode} />
-          <IconButton color="inherit"><AccountCircle /></IconButton>
+          <IconButton color="inherit" onClick={() => navigate('/userprofile')}><AccountCircle /></IconButton>
           <IconButton color="inherit" onClick={toggleConfig}><Settings /></IconButton>
-          <IconButton color="inherit"><ExitToApp /></IconButton>
+          <IconButton color="inherit" onClick={handleLogout}><ExitToApp /></IconButton>
         </Toolbar>
       </AppBar>
       <Breadcrumb />

@@ -16,9 +16,6 @@ const ChatArea = ({ messages, input, setInput, handleSend, selectedChapter, samp
               onClick={() => setInput(question)}
               sx={{
                 backgroundColor: '#f5f5f5',
-                '&:hover': {
-                  backgroundColor: '#e0e0e0',
-                },
                 cursor: 'pointer',
                 borderRadius: '4px',
                 boxShadow: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',

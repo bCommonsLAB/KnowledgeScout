@@ -10,7 +10,7 @@ const Chatbot = () => {
   const [selectedChapter, setSelectedChapter] = useState('1.1');
   const [expanded, setExpanded] = useState(['1']);
   const [selected, setSelected] = useState('');
-  const [loading, setLoading] = useState(true);
+  const [setLoading] = useState(true);
 
   useEffect(() => {
     // Simulate loading time
