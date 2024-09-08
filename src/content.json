@@ -1,0 +1,178 @@
+{
+    "items": [
+    {
+      "id": "1",
+      "name": "Monographien",
+      "children": [
+        { "id": "1.1", "name": "Lokale Literatur" },
+        { "id": "1.2", "name": "Essays und Sachbücher international" },
+        { "id": "1.3", "name": "Lehrbücher" },
+        { "id": "1.4", "name": "Homepages Institutionen" }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Fachartikel",
+      "children": [
+        {
+          "id": "2.1",
+          "name": "Zeitschriften Südtirol Auswahl",
+          "children": [
+            { "id": "2.1.1", "name": "Gredleriana" },
+            { "id": "2.1.2", "name": "Forest Observer" },
+            { "id": "2.1.3", "name": "Laimburg Journal" },
+            { "id": "2.1.4", "name": "Schlernschriften" }
+          ]
+        },
+        { "id": "2.2", "name": "Zeitschriften International Auswahl" }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Gutachten und andere Schriften der Ämter und Behörden",
+      "children": [
+        { "id": "3.1", "name": "UVP-Amt" },
+        {
+          "id": "3.2",
+          "name": "Abteilung Natur und Landschaft",
+          "children": [
+            { "id": "3.2.1", "name": "Managementpläne Schutzgebiete" },
+            { "id": "3.2.2", "name": "Gemeindeentwicklungspläne" }
+          ]
+        },
+        { "id": "3.3", "name": "Landeswarnzentrum" },
+        { "id": "3.4", "name": "Biologisches Landeslabor" },
+        { "id": "3.5", "name": "Amt für Wildtiermanagement" },
+        { "id": "3.6", "name": "Amt für Gewässerschutz" },
+        { "id": "3.7", "name": "Gemeinden" }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Medieninformationen (Zeitungsartikel, Radiotranskripte)",
+      "children": [
+        { "id": "4.1", "name": "Tageszeitungen Südtirol" },
+        { "id": "4.2", "name": "Tageszeitungen international" },
+        { "id": "4.3", "name": "Wochen/Monatszeitungen Südtirol (zB ff, Naturschutzblatt, SWZ)" },
+        { "id": "4.4", "name": "Wochen/Monatszeitungen international (zB Schweizer Naturschutzblätter, WWF-Nachrichten usw.)" },
+        { "id": "4.5", "name": "Online-Medien Südtirol" },
+        { "id": "4.6", "name": "Online-Medien international" },
+        { "id": "4.7", "name": "Rai Südtirol (Radio- und Fernsehsendungen Transkripte)" },
+        { "id": "4.8", "name": "Andere Fernseh- und Radioanstalten" },
+        { "id": "4.9", "name": "Others" }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Datenbanken",
+      "children": [
+        { "id": "5.1", "name": "Naturmuseum" },
+        { "id": "5.2", "name": "Biodiversitätsmonitoring" }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Monographien",
+      "children": [
+        {
+          "id": "6.1",
+          "name": "Lokale Literatur",
+          "children": [
+            { "id": "6.1.1", "name": "Landwirtschaftsreport Eurac" },
+            { "id": "6.1.2", "name": "Klimareport Eurac" },
+            { "id": "6.1.3", "name": "Farnbuch Naturmuseum" },
+            { "id": "6.1.4", "name": "Tagfalterbuch Naturmuseum" },
+            { "id": "6.1.5", "name": "Dialektnamen Südtirol Naturmuseum" },
+            { "id": "6.1.6", "name": "Käfer von Südtirol" },
+            { "id": "6.1.7", "name": "Farnpflanzen Südtirol" },
+            { "id": "6.1.8", "name": "Plant Life oft he Dolomites" },
+            { "id": "6.1.9", "name": "Flusskrebse Naturmuseum" },
+            { "id": "6.1.10", "name": "Katalog Gefäßpflanzen Südtirol" }
+          ]
+        },
+        { "id": "6.2", "name": "Essays und Sachbücher international" },
+        { "id": "6.3", "name": "Lehrbücher" },
+        {
+          "id": "6.4",
+          "name": "Homepages Institutionen",
+          "children": [
+            { "id": "6.4.1", "name": "Amt für Natur" },
+            { "id": "6.4.2", "name": "Naturmuseum" },
+            { "id": "6.4.3", "name": "Eurac Biodiversitätsmonitoring" },
+            { "id": "6.4.4", "name": "Ämter Österreich, Italien, Schweiz" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Fachartikel",
+      "children": [
+        {
+          "id": "7.1",
+          "name": "Zeitschriften Südtirol Auswahl",
+          "children": [
+            { "id": "7.1.1", "name": "Gredleriana" },
+            { "id": "7.1.2", "name": "Forest Observer" },
+            { "id": "7.1.3", "name": "Laimburg Journal" },
+            { "id": "7.1.4", "name": "Schlernschriften" }
+          ]
+        },
+        {
+          "id": "7.2",
+          "name": "Zeitschriften International Auswahl",
+          "children": [
+            { "id": "7.2.1", "name": "Biological Conservation" },
+            { "id": "7.2.2", "name": "Conservation Biology" },
+            { "id": "7.2.3", "name": "Biodiversity" },
+            { "id": "7.2.4", "name": "Diversity" },
+            { "id": "7.2.5", "name": "Usw." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Gutachten und andere Schriften der Ämter und Behörden",
+      "children": [
+        { "id": "8.1", "name": "UVP-Amt" },
+        {
+          "id": "8.2",
+          "name": "Abteilung Natur und Landschaft",
+          "children": [
+            { "id": "8.2.1", "name": "Managementpläne Schutzgebiete" },
+            { "id": "8.2.2", "name": "Gemeindeentwicklungspläne" }
+          ]
+        },
+        { "id": "8.3", "name": "Landeswarnzentrum" },
+        { "id": "8.4", "name": "Biologisches Landeslabor" },
+        { "id": "8.5", "name": "Amt für Wildtiermanagement" },
+        { "id": "8.6", "name": "Amt für Gewässerschutz" },
+        { "id": "8.7", "name": "Gemeinden" }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Medieninformationen (Zeitungsartikel, Radiotranskripte)",
+      "children": [
+        { "id": "9.1", "name": "Tageszeitungen Südtirol" },
+        { "id": "9.2", "name": "Tageszeitungen international" },
+        { "id": "9.3", "name": "Wochen/Monatszeitungen Südtirol (zB ff, Naturschutzblatt, SWZ)" },
+        { "id": "9.4", "name": "Wochen/Monatszeitungen international (zB Schweizer Naturschutzblätter, WWF-Nachrichten usw.)" },
+        { "id": "9.5", "name": "Online-Medien Südtirol" },
+        { "id": "9.6", "name": "Online-Medien international" },
+        { "id": "9.7", "name": "Rai Südtirol (Radio- und Fernsehsendungen Transkripte)" },
+        { "id": "9.8", "name": "Andere Fernseh- und Radioanstalten" },
+        { "id": "9.9", "name": "Others" }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Datenbanken",
+      "children": [
+        { "id": "10.1", "name": "Naturmuseum" },
+        { "id": "10.2", "name": "Biodiversitätsmonitoring" }
+      ]
+    }
+  ] 
+}

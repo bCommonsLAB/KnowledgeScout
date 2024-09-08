@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useMemo } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import getTheme from './theme';
+import MainLayout from './layouts/MainLayout';
+import WelcomeScreen from './components/WelcomeScreen/WelcomeScreen';
+import CaptureMode from './components/CaptureMode/CaptureMode';
+import ArchiveSearch from './components/ArchiveSearch/ArchiveSearch';
+import Chatbot from './components/Chatbot/Chatbot';
 
 function App() {
+  const [mode, setMode] = useState('light');
+  const theme = useMemo(() => getTheme(mode), [mode]);
+
+  const toggleColorMode = () => {
+    setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainLayout toggleColorMode={toggleColorMode} />}>
+            <Route index element={<WelcomeScreen />} />
+            <Route path="capture" element={<CaptureMode />} />
+            <Route path="archive" element={<ArchiveSearch />} />
+            <Route path="chatbot" element={<Chatbot />} />
+          </Route>
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 
